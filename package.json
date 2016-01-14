@@ -1,0 +1,13 @@
+{
+  "name": "parse-test-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "esprima": "^2.7.1",
+    "esprima-walk": "^0.1.0"
+  }
+}
