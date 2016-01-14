@@ -38,6 +38,6 @@ module.exports = function(testFilePath, cb) {
 		
 		ew.walk(ast, onNode);
 
-		cb(results);
+		cb(null, results);
 	});
 };
