@@ -5,7 +5,7 @@ var ew = require('esprima-walk');
 var dRgx = /(xd)?describe/;
 var iRgx = /(xi)?it/;
 
-var parseJsFile = function(testFilePath, cb) {
+module.exports = function(testFilePath, cb) {
 	fs.readFile(testFilePath, function(err, data) {
 		if (err) { return cb(err); }
 
@@ -41,5 +41,3 @@ var parseJsFile = function(testFilePath, cb) {
 		cb(results);
 	});
 };
-
-module.exports = parseJsFile;
